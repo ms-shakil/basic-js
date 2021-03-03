@@ -1,0 +1,12 @@
+.mybutton{
+    background-color: gray;
+    border-radius: 10px;
+    border: 1px solid gray;
+    padding: 10px;
+    outline: none;
+    color: white;
+}
+.ani{
+    box-shadow: 0 20px 20px 0 gold;
+    opacity: 0.5;
+}
