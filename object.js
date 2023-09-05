@@ -3,8 +3,9 @@ var obj ={
   name:"payer",
   age:19,
   district:"comilla",
-  country:"banglades"
+  country:"Bangladesh"
 }
+obj.name = "Sahabuddin Shakil"
 console.log(obj.name)
 console.log(obj)
 
