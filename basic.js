@@ -22,3 +22,20 @@ for(let i =0;i<=total;i++){
         console.log("out of fizzbuzz")
     }
 }
+
+
+// string 
+var mystr = "Hello United International University ."
+mystr += "why did you give Bambo on your student !"
+console.log(mystr)
+  str = "You should love your student"
+  mystr += str
+  console.log(mystr)
+  console.log(mystr.length)
+  mystr[0] ="h" // singal char cant change ....if want to change we  change full string
+  console.log(mystr)
+
+
+
+let Split_string = "hello bangladesh how are you"
+ console.log(Split_string.split(" ")) // split return array
