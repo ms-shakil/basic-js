@@ -20,3 +20,23 @@ for( let k in person){
   
     console.log(person[k])
 }
+
+
+function studentInfo(name,age){
+  return{
+    name:name,
+    age:age ,
+  }
+}
+
+console.log(studentInfo("Sahabuddin shakil",23))
+
+// function under object
+
+let message ={
+  body (){
+    return "hello i'm from under object"
+  }
+}
+
+console.log(message.body())

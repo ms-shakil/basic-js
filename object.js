@@ -22,3 +22,5 @@ function Engineer (name,age,position,company){
 var names =new Engineer("shakil",19,"programer","Null");
 var names1 = new Engineer("main",25,"software engineer","handy mama")
 console.log(names,names1);
+
+
