@@ -25,18 +25,38 @@ let message={
 }
 console.log(message.body())
 // using consize mathod
-let message={
+let message2={
     body(){
         return "This is inside function using consize mathods"
     }
 }
-console.log(message.body())
+console.log(message2.body())
 
 
 // using function name
-let message={
+let message3={
     'my function'(){
         return "This is inside function using consize mathods"
     }
 }
-console.log(message['my function']())
+console.log(message3['my function']())
+
+
+function Myfun (Name,Age){
+    return{
+        Name:Name,
+        Age,Age
+    }
+}
+let myObj ={
+    body(){
+        return "Hello js"
+    }
+}
+let myObj2 ={
+    'body'(){
+        return "Hello js"
+    }
+}
+
+myObj['body']()

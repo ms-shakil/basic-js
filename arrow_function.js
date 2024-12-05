@@ -39,12 +39,11 @@ var studentData =[
     }
 ]
 
-const find_StudentName =() =>{
-    return studentData.filter(function(x){
-        return x.gpa > 3.00;
-    }).map(function(y){
+let StudentName =()=>{
+    return studentData.filter((x)=>{
+        return x.gpa>3.5
+    }).map((y)=>{
         return y.name
     })
 }
-
-console.log(find_StudentName())
+console.log(StudentName())

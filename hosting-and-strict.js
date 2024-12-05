@@ -9,7 +9,7 @@ if (true){
 console.log(`value of x = ${x}`)
 var x;
  
-// strict modex
+// strict mode  , strict mode use only for clean code.
 // usly its not strict mod if we use srtict mode it don't worked
 
 "use strict"

@@ -14,3 +14,17 @@ let myobj ={
 for(let ele in myobj){
     console.log(`${ele}:${myobj[ele]}`)
 }
+
+let arr =[1,2,4,6,6]
+for(let x of arr){
+    console.log(arr)
+}
+
+let Obj ={
+    name:"shakil",
+    Age:23,
+    Uni:"UIU"
+}
+for(let x of Obj){
+    console.log(`${x}: ${Obj[x]}`)
+}
