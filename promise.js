@@ -33,25 +33,43 @@ Promise.all([promise1,promise2])  // call all promise
     console.log(res)
 })
 console.log("end")
+//
 
 
-// // rece work for 1st resolve promise
-const promise3 = new Promise((resolve,resect)=>{
-    setTimeout(()=>{
-        resolve("Complited promise3")
 
-    },2000)
-    
-})
-const promise4= new Promise((resolve,resect)=>{
-    setTimeout(()=>{
-        resolve("Complited promise4")
+/*
+promise
+ how to create promise
+  promise 3 part- pending, resolve , reject
+   // promise pending when create promise
+   // resolve when  promise work
+   // resject when promise dose't work
 
-    },1000)
-    
-})
+*/
 
-Promise.race([promise3,promise4])
-.then((res)=>{
+let tast1 =()=>{
+    return new Promise((resolve, reject)=>{
+        resolve("This is Task one")
+    })
+}
+let tast2 =()=>{
+    return new Promise((resolve, reject)=>{
+        resolve("This is Task 2")
+    })
+}
+let tast3 =()=>{
+    return new Promise((resolve, reject)=>{
+        resolve("This is Task 3")
+    })
+}
+let tast4 =()=>{
+    return new Promise((resolve, reject)=>{
+        resolve("This is Task 4")
+    })
+}
+
+tast1().then((res)=>{
+    console.log(res)
+}).then(tast2).then((res)=>{
     console.log(res)
 })

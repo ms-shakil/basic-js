@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Styled Form</title>
+  <!-- <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .form-container {
+      background: #ffffff;
+      padding: 25px 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      max-width: 400px;
+      width: 100%;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    label {
+      font-weight: bold;
+      margin-bottom: 5px;
+      display: block;
+      color: #555;
+    }
+    input[type="text"],
+    input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+    .radio-group {
+      margin-bottom: 15px;
+    }
+    .radio-group label {
+      font-weight: normal;
+      margin-right: 15px;
+      display: inline-flex;
+      align-items: center;
+    }
+    .radio-group input {
+      margin-right: 5px;
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      background: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background: #45a049;
+    }
+  </style> -->
+  <style>
+    .electircBill{
+      border: 3px solid Red;
+      width: 25%;
+      padding: 15px;
+    }
+  </style>
+</head>
+<body>
+
+
+
+  <!-- <div class="form-container">
+    <h2>Sign Up Form</h2>
+    <form action="">
+      <label for="name">Enter your Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your name" required>
+
+      <label for="email">Enter your Gmail:</label>
+      <input type="email" id="email" name="email" placeholder="Your Gmail" required>
+
+      <div class="radio-group">
+        <label>
+          <input type="radio" name="fav_language" value="HTML"> HTML
+        </label>
+        <label>
+          <input type="radio" name="fav_language" value="CSS"> CSS
+        </label>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div> -->
+    
+
+     <h1 id="heading-1">Hello js</h1>  
+     <h1 class="heading-2">Hello From Nepal</h1> 
+     <h1>hello From uiu</h1>
+
+      <h1 id="heading-3">learn js</h1>  
+     <h1 class="heading-4">Hello From Nepal</h1> 
+     <ul>
+      <li> <a href=""> Click Me</a></li>
+     </ul>
+
+      <h1>learn how onclik button work</h1>
+
+       <button onclick="alert('you have to work 5 hours in a day')">click me</button> <br>
+
+       <button onclick="message1()">button1</button>
+       <button onclick="message2()">button2</button>
+       <p id="message"></p>
+
+       <button onclick="message3()">button1</button>
+       <button onclick="message4()">button2</button> <br>
+       <img id="image" src="#" alt="" width="300" height="300">
+
+
+
+
+       <button  onclick="Previous()">Previous</button>
+        <img id="img" src="image/image1.jpg" alt=""  width="300" height="300">
+      <button  onclick="Next()">next</button> <br>
+
+        <h1>learn event listenr </h1>
+
+
+        <button id="eventBtn">click me</button>
+
+
+
+         <div class="electircBill">
+           <h1>Electric bill calculate</h1>
+
+          <div>
+            <label for="">Total unit</label>
+            <input type="text" name="unit" id="">
+          </div>
+          <div>
+            <label for="">Select area:</label>
+             <label for=""><input type="checkbox" name="area" value="roral">  Roral</label>
+             <label for=""><input type="checkbox" name="area" value="urban">  Urban</label>
+          </div>
+          <div>
+            <label for="">Total Bill:</label>
+            <span id="total-bill">0</span>
+          </div>
+          <button class="calculate-btn" onclick="calulate()">calculate bill</button>
+         </div>
+  <script src="dom.js"></script>
+  <script src="webStorage.js"> </script>
+
+
+
+</body>
+</html>
