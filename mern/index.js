@@ -72,3 +72,84 @@ let my_arr4 =[2,4,5,6,7,8]
 let new_arr =[...my_arr4] // ekta ekta element ettar hy new array te jacce
 
 
+// Boject
+
+let person ={
+    name:"shakil", // proparty
+    age:18,
+    addres:{
+        district:"comilla",
+        village:"None",
+        zip:3000,
+        interst:["js","py","c"]
+    },
+    moreInfo: function(){ // methods
+        console.log("this is sahab uddin shakil")
+    }
+}
+
+person.moreInfo()
+console.log(person.name)
+console.log(person.addres.village)
+
+let calculator ={
+    add:(num1,num2)=> num1+num2,  //{} na diye ek line korle reurn kore  ...etha ke implicit return। bole
+    minus:(num1,num2)=> num1-num2,
+}
+console.log(calculator.add(10,20))
+
+
+
+
+function helloWorld (){
+    console.log("say hello world")
+}
+
+let myObj ={
+    Name:"shakil",
+    hello:helloWorld,
+}
+
+myObj.age =20 // add new key value
+delete myObj.Name // kono key value delete kora
+
+myObj.name // value accesskora
+myObj["name"]// value access kora
+
+console.log(myObj.hello()) // object e value hisabe function dite pari
+
+
+// object itteration
+let car ={
+    name:"BMW ",
+    model:2020,
+    madeIn:"japan",
+    color:"red",
+    move:()=>{
+        console.log("run the cur")
+    }
+}
+
+car.dor="4" // add new key and value
+delete car.model
+
+// console.log(car.name)
+// console.log(car["name"]) // 2 type access value
+
+// iteration  
+// car.lenth use kora jai na its object
+
+for(let key in car){
+    console.log(key)
+}
+for(let key in car){
+    console.log(car[key]) // only normal vule dibe funciton dibe na
+}
+
+for(let key in car){
+    if(typeof car[key] == 'function'){
+       car[key]()
+    }else{
+        console.log(car[key])
+    }
+}
