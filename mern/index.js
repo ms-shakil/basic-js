@@ -72,7 +72,7 @@ let my_arr4 =[2,4,5,6,7,8]
 let new_arr =[...my_arr4] // ekta ekta element ettar hy new array te jacce
 
 
-// Boject
+// object
 
 let person ={
     name:"shakil", // proparty
