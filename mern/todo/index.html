@@ -17,22 +17,43 @@
         display: flex;
         justify-content: space-around;
     }
+    ul {
+        list-style-type: none;
+    }
+    .items button{
+        padding: 5px 12px;
+        background-color: red;
+        color: white;
+        border: none;
+        border-radius: 3px;
+    }
+    .input_section button{
+        padding: 5px 12px;
+        background-color: rgb(26, 79, 5);
+        color: white;
+        border: none;
+        border-radius: 3px;
+    }
+    .incomplitetask ul{
+        
+        
+    }
 </style>
 <body>
     
     <div class="todo-main">
-        <form action="">
+        <form id="form" action="">
              <div class="input_section">
                 <label for="">Enter a language</label>
-                <input type="text" name="" id="">
+                <input id="input_language" type="text" name="" id="">
                 <button type="submit">submit</button>
              </div>
              <div class="data_section">
 
                 <div class="incomplitetask">
                      <h2>In complite task.</h2>
-                     <ul>
-                        <li class="item"><input type="checkbox"> JavaScript </li>
+                     <ul >
+                       
                      </ul>
                 </div>
 
@@ -47,6 +68,6 @@
 
         
     </div>
-
+ <script src="script.js"> </script>
 </body>
 </html>
