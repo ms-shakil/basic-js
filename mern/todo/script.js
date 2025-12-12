@@ -15,10 +15,10 @@
  //  <li class="items"> javascript  <button> Delete</button> </li>
  let compliteTask = (inputdata)=>{
            let li = document.createElement("li")
-       li.classList.add("item")
+       li.classList.add("items")
        let input = document.createElement("button")
        input.append("delete")
-       li.append(input,inputdata)
+       li.append(inputdata,input)
        return li
         
  }
@@ -31,6 +31,19 @@ form.addEventListener("submit",(e)=>{
      let inputText = document.getElementById("input_language").value 
     let new_task = inCompliteTask(inputText)
     incompliteTodo.append(new_task)
-    
+    form.reset(); 
+   
 })
+ // incomplite to complite and remove from incomplite
+document.querySelector(".incom_ul").addEventListener("change",(e)=>{
+         let li = e.target.closest("li")
+         let text = li.innerText
+         li.remove()  
+        let complite_Language = compliteTask(text) 
+        document.querySelector(".compliteTask ul").appendChild(complite_Language)
+    })
 
+// remove from complite task
+document.querySelector(".compliteTask ul").addEventListener("click",(e)=>{
+        e.target.parentNode.remove()
+    })

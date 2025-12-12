@@ -12,6 +12,11 @@
         text-align: center;
         padding: 10%;
     }
+    h1{
+        font-size: 30px;
+        color:teal;
+        padding-bottom: 20px;
+    }
     .data_section{
         padding-top: 30px;
         display: flex;
@@ -22,27 +27,58 @@
     }
     .items button{
         padding: 5px 12px;
+        margin-left: 12px;
         background-color: red;
         color: white;
         border: none;
         border-radius: 3px;
     }
+    label{
+        font-size: 18px;
+    }
+    #input_language {
+        padding: 10px 30px
+    }
     .input_section button{
-        padding: 5px 12px;
-        background-color: rgb(26, 79, 5);
+        padding: 12px 30px;
+        background-color: teal;
         color: white;
         border: none;
         border-radius: 3px;
     }
+    .incomplitetask h2{
+        color: rgb(54, 119, 119);
+        font-size: 25px;
+            
+    }
     .incomplitetask ul{
-        
-        
+        padding: 0;
+    }
+    .incomplitetask ul li{
+            display: flex;
+            align-items: center;     
+            justify-content: flex-start; 
+            padding: 2px 5px;
+            min-height: 30px;
+      
+    }
+    .compliteTask h2{
+        color: rgb(45, 99, 45);
+        font-size: 25px;
+    }
+    .compliteTask ul li{
+            display: flex;
+            align-items: center;     
+            justify-content: flex-start; 
+            padding: 2px 5px;
+            min-height: 30px;
     }
 </style>
 <body>
     
     <div class="todo-main">
         <form id="form" action="">
+              <h1  > Todo - App</h1>
              <div class="input_section">
                 <label for="">Enter a language</label>
                 <input id="input_language" type="text" name="" id="">
@@ -51,16 +87,16 @@
              <div class="data_section">
 
                 <div class="incomplitetask">
-                     <h2>In complite task.</h2>
-                     <ul >
+                     <h2>In complite task</h2>
+                     <ul class="incom_ul">
                        
                      </ul>
                 </div>
 
-                <div class="complitetast">
+                <div class="compliteTask">
                     <h2>Complite Task </h2>
                     <ul>
-                        <li class="items"> javascript  <button> Delete</button> </li>
+                        
                     </ul>
                 </div>
              </div>
