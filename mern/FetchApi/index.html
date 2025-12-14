@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+       <h1>Dog image</h1>
+      <button onclick="randomDog()"> Show dog </button>
+      <div id="result" style="max-height:300px;"> </div>
+        <img src="" alt="">
+
+    <script>
+          
+          async function randomDog() {
+            document.getElementById("result").innerHTML = "loading......"
+            let url ="https://dog.ceo/api/breeds/image/random"
+              let response =  await fetch(url)
+              let data = await response.json()
+               let message = data.message
+               let img = `<img src='${message}'>`
+               document.getElementById("result").innerHTML = img
+          }
+          randomDog()
+    </script>
+</body>
+</html>
