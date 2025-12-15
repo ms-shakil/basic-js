@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exchange</title>
+    <link rel="stylesheet" href="https://matcha.mizu.sh/matcha.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+     <section style=" ">
+            <h1>Exchange Rate</h1>
+             <label for="">Amount:</label>
+             <input type="text" name="" id="input"> <br>
+             <label for="">Convert To </label>
+             <select name="" id="exhange_vlaue">
+                <option value="0">select one</option>
+                <option value="USD">USD</option>
+                <option value="GBP">GBP</option>
+                <option value="EUR">EUR</option>
+            </select>
+
+            <span >Total amount:   <span id="result"></span>  </span> <br> 
+            <button id="btn" onclick="exChangeMoney()">convert money </button>
+
+     </section>
+ <script src="script.js"></script>
+</body>
+</html>
