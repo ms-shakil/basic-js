@@ -1,0 +1,36 @@
+{
+  "books": [
+    {
+      "titel": "javascipt ",
+      "author": "osman hadi",
+      "id": "1"
+    },
+    {
+      "titel": "Abc",
+      "author": "None",
+      "id": "2"
+    },
+    {
+      "id": "5e3c",
+      "titel": "book2",
+      "author": "osman"
+    },
+    {
+      "id": "0770",
+      "titel": "book2",
+      "author": "osman"
+    }
+  ],
+  "user": [
+    {
+      "name": "shakil",
+      "email": "ms@gmail.com",
+      "id": "1"
+    },
+    {
+      "name": "shakil",
+      "email": "ms@gmail.com",
+      "id": "2"
+    }
+  ]
+}

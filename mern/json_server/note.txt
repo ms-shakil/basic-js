@@ -1,0 +1,19 @@
+JSON Server হলো একটা fake / mock REST API server 🔥
+যেটা দিয়ে তুমি backend ছাড়াই frontend practice করতে পারো।
+
+এক কথায় 👉
+
+একটা JSON file কে full REST API বানিয়ে দেয়
+
+
+
+// json server install commad
+
+npm install -g json-server
+
+// run command
+json-server fileName.json 
+// or   npx json-server --watch data.json
+
+// notun port e on korte chile
+ npx json-server data.json --port 3001
