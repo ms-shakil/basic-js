@@ -8,7 +8,7 @@ let newData ={
 let updateData ={
     
      "titel":"javascipt ",
-     "author":"osman hadi"
+     "author":"Shorif osman hadi"
      
 }
 let callApi = async ()=>{

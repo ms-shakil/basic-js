@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link rel="stylesheet" href="https://matcha.mizu.sh/matcha.css">
+
+</head>
+<body>
+        <!--Add new data -->
+        <div>
+            <h1>Book details</h1>
+             <label for=" ">title:</label>
+             <input id="title" type="text">
+             <label for=" ">author:</label>
+             <input id="author" type="text">
+             <button onclick="pushData()" >add data</button>
+        </div>
+         <!-- delete data -->
+
+        <div>
+             <h2>Deltete data </h2>
+            <label for=" ">ID:</label>
+             <input id="id" type="text">
+             <button onclick="deleteData()" >add data</button>
+        </div>
+
+                   <!--update  data -->
+        <div>
+            <h1>Book details Update</h1>
+             <label for=" ">title:</label>
+             <input id="titles" type="text">
+             <label for=" ">author:</label>
+             <input id="authors" type="text">
+                <label for=" ">id:</label>
+             <input id="updateId" type="text">
+             <button onclick="updateBook()" >update book</button>
+        </div>
+
+
+
+        <script>
+              async function pushData() {
+                let title = document.getElementById("title").value
+                let author = document.getElementById("author").value
+                let newdata = {title,author}
+                let apiUrl ="http://localhost:3001/books"
+                await fetch(apiUrl,{
+                    method:"POST",
+                    body:JSON.stringify(newdata)
+                })
+                alert("push data")
+              }
+
+
+              // deltete function
+
+              async function deleteData() {
+                let id = document.getElementById("id").value
+                let url = `http://localhost:3001/books/${id}`
+                await fetch(url, {
+                    method:"DELETE"
+                })
+                alert("Delete data")
+              }
+
+                 async function updateBook() {
+                let title = document.getElementById("titles").value
+                let author = document.getElementById("authors").value
+                let id = document.getElementById("updateId").value
+                let update = {title,author,id}
+                let url = `http://localhost:3001/books/${id}`
+                await fetch(url, {
+                    method:"PUT",
+                    body:JSON.stringify(update)
+                })
+                console.log(update)
+                alert("update data")
+              }
+
+
+
+        </script>
+</body>
+</html>
