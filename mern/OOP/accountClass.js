@@ -1,7 +1,7 @@
 
 
 class bankAccount {
-    #blance=0
+    #blance=0 // encapsulation  --> class er bahre acces kora jabe nah
     constructor(amount){  // this is constraction
         this.#blance = amount
 
